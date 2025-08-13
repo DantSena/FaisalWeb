@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Faisal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #000;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+section {
+  padding: 100px 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+section:nth-of-type(2) { animation-delay: 0.3s; }
+section:nth-of-type(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.6);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 0 50px rgba(30, 144, 255, 0.8);
+}
+
+img.foto-saya {
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #fff, 0 0 20px #1e90ff, 0 0 30px #1e90ff;
+}
+
+.hewan {
+  position: fixed;
+  bottom: 0;
+  left: -150px;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  background-size: cover;
+  animation: gerakHewan 25s linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+@keyframes gerakHewan {
+  0% { left: -150px; bottom: 0; transform: rotate(0deg); }
+  50% { bottom: 200px; transform: rotate(10deg); }
+  100% { left: 110%; bottom: 0; transform: rotate(0deg); }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <img src="https://i.supaimg.com/55a41a58-092b-4fc1-b20e-95937dadf6e9.jpg" alt="Logo">
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#karya">Lihat Karya Saya</a>
+    </nav>
+  </header>  <section id="beranda">
+    <div class="container">
+      <h1 class="glow-text">Portofolio</h1>
+      <p><strong>Nama:</strong> Faisal Sayhan Mohga</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Nganjuk, 03 Agustus 2008</p>
+      <p><strong>Umur:</strong> 17 tahun</p>
+      <p><strong>Tempat Tinggal:</strong> DS. Gemenggeng, Kecamatan Bagor, Kabupaten Nganjuk</p>
+      <p><strong>Pendidikan:</strong> SMAN 1 NGANJUK</p>
+      <p><strong>Hobi:</strong> Running</p>
+      <p><strong>Kemampuan:</strong> Bidang Matematika</p>
+      <p><strong>Cita-cita:</strong> Kedinasan STAN</p>
+    </div>
+  </section>  <section id="tentang">
+    <div class="container">
+      <h2 class="glow-text">About Me</h2>
+      <img class="foto-saya" src="https://i.supaimg.com/85e7b6f6-4202-4c1e-8015-72715f3d10d8.jpg" alt="Foto Faisal">
+            <img class="foto-saya" src="https://i.supaimg.com/9ab4293b-8df1-456e-b2e6-197d8b045ea8.jpg" alt="Foto Faisal">
+            <img class="foto-saya" src="https://i.supaimg.com/f43e85b8-ad79-4b65-8e9e-b7ae1d135d70.jpg" alt="Foto Faisal">
+      <p>Nama saya Faisal. Saya tinggal di Desa Gemenggeng, Kecamatan Bagor. Saat ini saya berusia 17 tahun dan menjalani masa remaja dengan penuh semangat serta rasa ingin tahu yang tinggi.
+
+Saya memiliki hobi lari karena bagi saya berlari bukan hanya sekadar olahraga, tetapi juga cara untuk menjaga kesehatan tubuh.Selain itu, saya juga gemar bermain PlayStation sebagai sarana hiburan dan pelepas stres setelah menjalani aktivitas harian.
+
+Sebagai pribadi ekstrovert, saya senang berinteraksi dan bertemu dengan banyak orang baru. Suasana yang hidup dan penuh tawa membuat energi saya semakin bertambah. Namun, di sisi lain, saya juga mencintai keindahan alam. Bagi saya, alam memberikan ketenangan dan kedamaian yang sulit ditemukan di tempat lain. Melihat pemandangan hijau atau mendengar suara gemericik air membuat hati saya terasa lebih damai.
+</p>
+    </div>
+  </section>  <section id="karya">
+    <div class="container">
+      <h2 <img class="karya saya" src="">Short Movie</h2>
+      <p>tugas shirt movie mengajarkan kita dalam kreativitas,kerja sama,mengatur waktu dan pendalaman karakter</p>
+      <img src="vid.png" alt="">
+          <a href="https://youtu.be/LFdZfHIbRDg" target="_blank" class="button"> Youtube</a>
+          <a href="https://drive.google.com/drive/folders/1GSkE6KeBp21mc5c8FEJcRtdEIEb2O5xA" target="_blank" class="button"> Drive</a>
+          </div>
+
+        
+  </section>  <section id="karya">
+    <div class="container">
+      <h2>info grafis</h2>
+      <a href="https://www.canva.com/design/DAGv8oZA3Tc/FBp7AKzMUbkanSJFtP61vQ/edit?utm_content=DAGv8oZA3Tc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+    target="_blank" class="button"> canva</a>  "
+      <p>dalam tugas pembuatan infografis,dengan ini saya merasa tau dalam penggunaan beberapa alat di canva,selain itu juga menambah kreativitas dan keterampilan dalam digital</p>
+    </div>
+  </section>  <div class="hewan"></div>  <script>
+    // Background kelap-kelip
+    const colors = ['#a1c4fd', '#c2e9fb', '#ffecd2', '#fcb69f', '#a18cd1', '#fbc2eb'];
+    let i = 0;
+    setInterval(() => {
+      document.body.style.background = `linear-gradient(to right, ${colors[i]}, ${colors[(i + 1) % colors.length]})`;
+      i = (i + 1) % colors.length;
+    }, 3000);
+  </script></body>
+</html>
